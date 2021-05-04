@@ -1,0 +1,38 @@
+version: "3"
+services:
+  template-nodejs:
+    build: ./node-mongo-template
+    container_name: template-nodejs
+    depends_on:
+      - template-mongo
+    volumes:
+      - /data/template/media/images/:/data/template/media/images/
+    env_file:
+      - ./node-mongo-template/.env
+
+  template-mongo:
+    image: mongo
+    container_name: template-mongo
+    volumes:
+      - template-mongo:/data/db
+    env_file:
+      - ./node-mongo-template/.env
+      
+  template-gateway:
+    build: ./template-gateway
+    volumes:
+      - /data/template/media/images/:/data/template/media/images/
+    ports:
+      - "80:80"
+      - "443:443"
+    command: bash -c "sh build_config.sh"
+    env_file:
+      - ./template-gateway/.env
+
+volumes:
+  template-mongo:
+
+networks:
+  default:
+    external:
+      name: template-net

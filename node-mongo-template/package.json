@@ -1,0 +1,51 @@
+{
+  "name": "template-node-mongo",
+  "version": "1.0.0",
+  "description": "Template Node Mongo Typescript Docket",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "nodemon --watch ./src/ --ignore ./src/**/*.spec.ts --exec ts-node ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fioptech/node-mongo-template.git"
+  },
+  "keywords": [
+    "node",
+    "mongo",
+    "template"
+  ],
+  "author": "huynhnt6995",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^3.0.1",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/jsonwebtoken": "^8.5.1",
+    "@types/mongoose": "^5.10.4",
+    "@types/morgan": "^1.9.2",
+    "@types/multer": "^1.4.5",
+    "@types/uuid": "^8.3.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  }
+}

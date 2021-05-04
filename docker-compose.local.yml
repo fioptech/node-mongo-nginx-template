@@ -1,0 +1,8 @@
+version: "3"
+services:
+  template-nodejs:
+    volumes:
+      - ./:/app
+    ports:
+      - "8000:8000"
+    command: bash -c "cd node-mongo-template && npm i && npm start"

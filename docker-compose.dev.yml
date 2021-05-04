@@ -1,0 +1,6 @@
+version: "3"
+services:
+  template-nodejs:
+    volumes:
+      - ./node-mongo-template:/app
+    command: bash -c "cd node-mongo-template && npm i && npm start"

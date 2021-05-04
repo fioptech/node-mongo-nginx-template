@@ -1,0 +1,1 @@
+rsync -a --exclude=.git/ --exclude=node_modules/ --exclude=package-lock.json . root@template.fiop.com.vn:~/template-api/

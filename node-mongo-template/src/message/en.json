@@ -1,0 +1,11 @@
+{
+    "NOT_FOUND_USER": "User not found!",
+    "GENERATE_HASH_PASSWORD_ERROR": "An error occure when generate password",
+    "COMPARE_PASSWORD_ERROR": "An error occure when compare password",
+    "TOKEN_NOT_VALID_1": "Token is not valid",
+    "TOKEN_NOT_VALID_2": "Token is not valid",
+    "NOT_RECEIVE_FILE": "Not receive file",
+    "NOT_SUPPORT_MULTI_FILE": "Not yet support upload multifile",
+    "INVALID_IMAGE_FILE_FORMAT": "Invalid image file format",
+    "NOT_FOUND_MY_PROFILE": "Not found my profile"
+}
